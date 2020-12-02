@@ -2,16 +2,16 @@
   <div>
     <div class="item">
       <div class="item-1">
-         <router-link to="/product/paohua2/"><img src="../assets/产品图.png" alt=""></router-link>
-        <div class="detail"><router-link to="/product/paohua2/">硅酸钾</router-link></div>
+         <router-link to="/product/paohua5/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua5/">硅酸钾</router-link></div>
       </div>
       <div class="item-1">
-        <router-link to="/product/paohua1/"><img src="../assets/产品图.png" alt=""></router-link>
-        <div class="detail"><router-link to="/product/paohua1/">固体硅酸钾</router-link></div>
+        <router-link to="/product/paohua5/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua5/">固体硅酸钾</router-link></div>
       </div>
       <div class="item-1">
-        <router-link to="/product/paohua3/"><img src="../assets/产品图.png" alt=""></router-link>
-        <div class="detail"><router-link to="/product/paohua3/">液体硅酸钾</router-link></div>
+        <router-link to="/product/paohua5/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua5/">液体硅酸钾</router-link></div>
       </div>
     </div>
   </div>

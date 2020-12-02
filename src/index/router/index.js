@@ -19,6 +19,7 @@ const paohua1 = () => import('../views/detail/paohua1')
 const paohua2 = () => import('../views/detail/paohua2')
 const paohua3 = () => import('../views/detail/paohua3')
 const paohua4 = () => import('../views/detail/paohua4')
+const paohua5 = () => import('../views/detail/paohua5')
 
 Vue.use(VueRouter)
 
@@ -118,6 +119,10 @@ const routes = [{
             path: 'paohua4',
             component: paohua4
           },
+           {
+             path: 'paohua5',
+             component: paohua5
+           },
     ]
   }
 ]

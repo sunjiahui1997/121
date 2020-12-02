@@ -23,11 +23,11 @@
         <div class="readMore"><router-link to="/product/proitem/">查看详情</router-link></div>
       </div>
       <div class="item1" id="center1">
-        <div class="tiTle">碳酸钠</div>
+        <div class="tiTle">碳酸钾</div>
         <div class="readMore"><router-link to="/product/prok/">查看详情</router-link></div>
       </div>
       <div class="item1" id="right1">
-        <div class="tiTle">碳酸钠</div>
+        <div class="tiTle">碳酸钾钠</div>
         <div class="readMore"><router-link to="/product/prokna/">查看详情</router-link></div>
       </div>
     </div>
@@ -109,12 +109,12 @@
       ></textarea>
       <div class="submit">提交留言</div>
     </div>
-    <div class="foot">
-      <div class="foot1" style="margin-top: 24px;">
-        Copyright© 2020 湖州宏盛新材料科技有限公司 版权所有
-      </div>
-      <div class="foot1" style="margin-top: 7px;">浙ICP备案号17000000号</div>
-    </div>
+    <!-- <div class="foot"> -->
+      <!-- <div class="foot1" style="margin-top: 24px;"> -->
+        <!-- Copyright© 2020 湖州宏盛新材料科技有限公司 版权所有 -->
+      <!-- </div> -->
+      <!-- <div class="foot1" style="margin-top: 7px;">浙ICP备案号17000000号</div> -->
+    <!-- </div> -->
   </div>
 </template>
 
@@ -387,7 +387,7 @@ line-height: 24px;
 
 .end {
   margin-top: 140px;
-  width: 1920px;
+  width: 100%;
   height: 400px;
   background: #359eae;
   position: relative;
@@ -488,7 +488,7 @@ textarea {
   outline: none;
 }
 .foot {
-  width: 1920px;
+  width: 1910px;
   height: 80px;
   background: #ffffff;
 }

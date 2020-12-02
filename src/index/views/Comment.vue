@@ -223,7 +223,7 @@ export default {
 .foot {
   position: relative;
   top: 520px;
-  width: 1920px;
+   width: 100%;
   height: 80px;
   background: #359eae;
   bottom: 0px;

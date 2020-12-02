@@ -213,9 +213,9 @@ export default {
   top: 40px;
 }
 .foot {
-  position: absolute;
-  top: 1330px;
-  width: 1920px;
+  position: relative;
+  top: 830px;
+  width: 100%;
   height: 80px;
   background: #359eae;
   /* bottom: 0px; */

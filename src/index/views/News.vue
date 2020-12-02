@@ -158,7 +158,7 @@ export default {
 }
 .foot {
   position: relative;
-  width: 1920px;
+  width: 100%;
   height: 80px;
   top: 1300px;
   background: #359eae;

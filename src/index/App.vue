@@ -156,6 +156,7 @@ export default {
 #app {
   width: 1920px;
   /* overflow-x: visible; */
+  display: flex;
 }
 body {
   margin: 0;
