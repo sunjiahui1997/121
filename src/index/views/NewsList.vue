@@ -2,7 +2,10 @@
   <div>
     <div class="newItem">
       <div class="line"></div>
-      <router-link to="/news/newsitem/"><div class="img11"><img src="../assets/公司简介（外部）.png" alt=""></div></router-link>
+      <router-link to="/news/newsitem/"
+        ><div class="img11">
+          <img src="../assets/公司简介（外部）.png" alt="" /></div
+      ></router-link>
       <div class="title">
         <router-link to="/news/newsitem/">新闻标题</router-link>
       </div>
@@ -22,17 +25,16 @@ export default {
   },
   mounted() {
     // layui.use("laypage", function() {
-      // var laypage = layui.laypage;
-
-      // laypage.render({
-        // elem: "test1",
-        // count: 52,
-        // limit: 4,
-        // groups: 4,
-        // prev: "&lt;",
-        // next: "&gt;",
-        // theme: "#359EAE"
-      // });
+    // var laypage = layui.laypage;
+    // laypage.render({
+    // elem: "test1",
+    // count: 52,
+    // limit: 4,
+    // groups: 4,
+    // prev: "&lt;",
+    // next: "&gt;",
+    // theme: "#359EAE"
+    // });
     // });
   },
   methods: {}
@@ -50,7 +52,7 @@ export default {
   position: relative;
   cursor: pointer;
 }
-img{
+img {
   width: 140px;
   height: 140px;
 }
@@ -76,10 +78,10 @@ a {
   left: 153px;
   top: 28px;
 }
-#pageBox{
+#pageBox {
   position: absolute;
   right: -310px;
-  top:677px;
+  top: 677px;
 }
 .content {
   width: 508px;

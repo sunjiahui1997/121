@@ -1,10 +1,10 @@
 <template>
   <div id="app" style="width:100%">
-    <a class="back" href="/manage.html">进入后台</a>
+    <!-- <a class="back" href="/manage.html">进入后台</a> -->
     <div style="width:100%;">
       <div class="tabbar">
         <div class="nav">
-          <div class="logo"></div>
+          <div class="logo"><img src="./assets/logo.png" alt=""></div>
           <div class="navbar">
             <div
               class="nav-item"
@@ -113,6 +113,7 @@ export default {
     },
     btnclick(index) {
       this.currentIndex = index;
+      // location.reload()
     },
     introduce() {
       this.$router.push("/intro");
@@ -170,7 +171,7 @@ body {
   top: 14px;
   width: 126px;
   height: 42px;
-  background: #4489b0;
+  /* background: #4489b0; */
 }
 
 .tabbar {

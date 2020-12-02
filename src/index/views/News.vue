@@ -5,7 +5,8 @@
       <div class="title33">联系我们</div>
       <div class="line33"></div>
       <div class="content11">
-        联系人： 夏仁玉 <br />手 机：13805768895 <br />电 话：13805768895 <br />
+        联系人： 夏仁玉 <br />手 机：13805768895 <br />销售经理：黄广建<br />电
+        话：18268115945 <br />
         邮箱：3536127966@qq.com <br />
         名称：湖州宏盛新材料科技有限公司 <br />
       </div>
@@ -31,10 +32,8 @@
 </template>
 
 <script>
-
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
       pageTotal: 1, //总页数
@@ -48,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.content333{
+.content333 {
   width: 1920px;
   height: 100%;
 }
@@ -99,7 +98,7 @@ export default {
   font-weight: 400;
   color: #333333;
   position: absolute;
-  top: 108px;
+  top: 95px;
   left: 30px;
   line-height: 35px;
   white-space: nowrap;
@@ -110,7 +109,7 @@ export default {
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #333333;
-  top: 304px;
+  top: 320px;
   left: 31px;
 }
 .logo11 {

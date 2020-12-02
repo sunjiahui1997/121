@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="nihao">
-      <img src="../assets/产品图.png" alt="">
-      <div class="desc">35℃～40℃不透明中性泡化碱</div>
+      <img src="../../assets/产品图.png" alt="">
+      <div class="desc">35℃～40℃透明中性泡化碱</div>
       <div class="item" id="item1">
         <div class="name">模数：</div>
         <div class="para">3.2M～3.5M</div>

@@ -20,15 +20,15 @@
     <div id="iTem">
       <div class="item1" id="left1">
         <div class="tiTle">碳酸钠</div>
-        <div class="readMore">查看详情</div>
+        <div class="readMore"><router-link to="/product/proitem/">查看详情</router-link></div>
       </div>
       <div class="item1" id="center1">
         <div class="tiTle">碳酸钠</div>
-        <div class="readMore">查看详情</div>
+        <div class="readMore"><router-link to="/product/prok/">查看详情</router-link></div>
       </div>
       <div class="item1" id="right1">
         <div class="tiTle">碳酸钠</div>
-        <div class="readMore">查看详情</div>
+        <div class="readMore"><router-link to="/product/prokna/">查看详情</router-link></div>
       </div>
     </div>
     <div id="product">
@@ -65,7 +65,7 @@
           :class="{ active: 0 === currentIndex }"
           @click="change(0)"
         >
-          企业咨询
+          <router-link to="/home/homeitem">企业咨询</router-link>
         </div>
       </div>
       <div class="con2">
@@ -74,13 +74,14 @@
           :class="{ active: 1 === currentIndex }"
           @click="change(1)"
         >
-          行业动态
+          <router-link to="/home/homebus">行业动态</router-link>
         </div>
       </div>
     </div>
     <router-view></router-view>
     <div class="end">
       <div class="title-end1">联系我们</div>
+      <div class="contact">销售经理：黄广建<br>手 机：18268115945</div>
       <div class="title-content">
         名称： 湖州宏盛新材料科技有限公司<br />地址：湖州市南浔区菱湖镇下昂工业园丰泰路928号<br />联系人：夏仁玉<br />手
         机：13805768895 <br />邮箱：3536127966@qq.com
@@ -221,7 +222,16 @@ export default {
   color: #ffffff;
   line-height: 24px;
 }
-
+.contact{
+position: absolute;
+left: 588px;
+top: 183px;
+font-size: 14px;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 24px;
+}
 #title3 {
   font-size: 24px;
   font-family: Source Han Sans CN;

@@ -1,18 +1,19 @@
 <template>
   <div class="content333">
     <div class="bo-x">
-      <div class="img1"><img src="../assets/电话.png" alt=""></div>
+      <div class="img1"><img src="../assets/电话.png" alt="" /></div>
       <div class="title33">联系我们</div>
       <div class="line33"></div>
       <div class="content11">
-        联系人： 夏仁玉 <br />手 机：13805768895 <br />电 话：13805768895 <br />
+        联系人： 夏仁玉 <br />手 机：13805768895 <br />销售经理：黄广建<br />电
+        话：18268115945 <br />
         邮箱：3536127966@qq.com <br />
         名称：湖州宏盛新材料科技有限公司 <br />
       </div>
       <div class="content22">地址：湖州市南浔区菱湖镇下昂工业园丰泰路928号</div>
     </div>
     <div class="content-new">
-      <div class="logo11"><img src="../assets/新闻01.png" alt=""></div>
+      <div class="logo11"><img src="../assets/新闻01.png" alt="" /></div>
       <div class="title44">产品中心</div>
       <div class="position">
         当前位置：湖州宏盛新材料科技有限公司 >>新闻中心
@@ -32,14 +33,20 @@
         <div
           class="tab1"
           :class="{ active: 1 === currentIndex }"
-          @click="btnclick(1)"
+          @click="
+            btnclick(1);
+            k();
+          "
         >
           硅酸钾
         </div>
         <div
           class="tab1"
           :class="{ active: 2 === currentIndex }"
-          @click="btnclick(2)"
+          @click="
+            btnclick(2);
+            kna();
+          "
         >
           硅酸钾钠
         </div>
@@ -68,6 +75,12 @@ export default {
     },
     na() {
       this.$router.push("/product/proitem");
+    },
+    k() {
+      this.$router.push("/product/prok");
+    },
+    kna() {
+      this.$router.push("/product/prokna");
     }
   }
 };
@@ -122,7 +135,7 @@ export default {
   font-weight: 400;
   color: #333333;
   position: absolute;
-  top: 108px;
+  top: 95px;
   left: 30px;
   line-height: 35px;
   white-space: nowrap;
@@ -133,7 +146,7 @@ export default {
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #333333;
-  top: 304px;
+  top: 320px;
   left: 31px;
 }
 .logo11 {

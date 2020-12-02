@@ -15,6 +15,7 @@
     "swiper": "^6.3.5",
     "uuid": "^8.3.1",
     "vue": "^2.6.11",
+    "vue-baidu-map": "^0.21.22",
     "vue-router": "^3.2.0",
     "vue-swiper-component": "^2.1.3"
   },

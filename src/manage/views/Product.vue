@@ -54,13 +54,16 @@
             <th id="op">操作</th>
           </tr>
         </thead>
-        <tr v-for="(item ,index) in pro" :key="index">
-          <td><img :src="item.ip" alt=""></td>
-          <td>{{item.name}}</td>
-          <td>{{item.lx | cate }}</td>
-          <td>{{item.xh}}</td>
-          <td>{{item.jgTime}}</td>
-          <td><button>编辑</button><button>删除</button></td>
+        <tr v-for="(item, index) in pro" :key="index">
+          <td><img :src="item.ip" alt="" /></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.lx | cate }}</td>
+          <td>{{ item.xh }}</td>
+          <td>{{ item.jgTime }}</td>
+          <td>
+            <button @click="edit(item)">编辑</button
+            ><button @click="delate(item.id)">删除</button>
+          </td>
         </tr>
         <tbody></tbody>
       </table>
@@ -79,9 +82,12 @@ export default {
       },
       show: false,
       black: false,
-      pro: []
+      pro: [],
+      pageIndex:1,
+      pageSize:30
     };
   },
+  inject: ["reload"],
   methods: {
     additem() {
       this.$router.push("/addpro");
@@ -89,13 +95,42 @@ export default {
     showDrop() {
       this.show = !this.show;
       this.black = !this.black;
+    },
+    edit(item) {
+      console.log(item);
+      this.$router.push({
+        path: "/editlist",
+        query: {
+          lx: item.lx,
+          xh: item.xh,
+          name: item.name,
+          ip: item.ip
+        }
+      });
+    },
+    delate(iid) {
+      var x;
+      var r = confirm("确认删除？");
+      if (r) {
+        axios.delete(
+          // `http://122.114.162.87:8080/system/api/jscpzxdelete?id=${y}`,
+          'http://122.114.162.87:8080/system/api/jscpzxdelete/',
+          {
+            params: {
+              id: iid
+            }
+          }
+        );
+        this.reload();
+      } else {
+      }
     }
   },
   mounted() {
     axios
       .post("http://122.114.162.87:8080/system/api/jscpzx", {
-        pageIndex: "1",
-        pageSize: "10"
+        pageIndex: this.pageIndex,
+        pageSize: this.pageSize
       })
       .then(res => {
         console.log(res.data.result.rowsList);
@@ -106,16 +141,16 @@ export default {
         console.log(error);
       });
   },
-  filters:{
-    cate(val){
-      if(val === '0'){
-        val = '硅酸钠'
-      }else if(val === '1' ){
-        val ='硅酸钾'
-      }else if(val === '2'){
-        val = '硅酸钾钠'
+  filters: {
+    cate(val) {
+      if (val === "0") {
+        val = "硅酸钠";
+      } else if (val === "1") {
+        val = "硅酸钾";
+      } else if (val === "2") {
+        val = "硅酸钾钠";
       }
-      return val
+      return val;
     }
   }
 };
@@ -264,7 +299,7 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-img{
+img {
   width: 30px;
   height: 30px;
 }

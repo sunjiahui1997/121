@@ -48,6 +48,7 @@
       <div class="btn2" @click="subbmit">发布</div>
       <div class="btn2">取消</div>
     </div>
+    <div class="img3"><input class="file" name="file" type="file" accept="image/png,image/gif,image/jpeg" @change="update"/></div>
   </div>
 </template>
 
@@ -68,9 +69,9 @@ export default {
     };
   },
   props: {},
+  inject:['reload'],
   created() {
-    this.elId = uuidv4() //获取随机id
-    console.log(this.elId);
+    this.elId = uuidv4()
   },
   methods: {
     backHome() {
@@ -81,9 +82,29 @@ export default {
         alert("请输入内容");
       } else {
         this.form1.push({ name: this.name2, canshu: this.p });
-        //    this.foorm2.push(this.foorm.param)
         this.p = "";
       }
+    },
+    update (e) {   // 上传照片
+      let self = this
+      let file = e.target.files[0]
+      /* eslint-disable no-undef */
+      let param = new FormData()  // 创建form对象
+      param.append('file', file)  // 通过append向form对象添加数据
+      param.append('id', this.elId)  // 通过append向form对象添加数据
+      param.append('chunk', '0') // 添加form表单中其他数据
+      console.log(param.get('file')) // FormData私有类对象，访问不到，可以通过get判断值是否传进去
+      let config = {
+        headers: {'Content-Type': 'multipart/form-data'}
+      }
+     // 添加请求头
+    axios.post('http://122.114.162.87:8080/system/api/upload', param, config)
+        .then(res => {
+          if (res.data.code === 0) {
+            self.ImgUrl = res.data.data
+          }
+          console.log(res.data)
+        })
     },
     subbmit() {
       var m;
@@ -128,7 +149,7 @@ export default {
       // console.log(time);
       axios
         .post("http://122.114.162.87:8080/system/api/jscpzxadd", {
-          id: "22",
+          id: this.elId,
           name: this.name,
           xh: this.xh,
           jgTime: time,
@@ -136,10 +157,14 @@ export default {
         })
         .then(function(response) {
           console.log(response); //成功
+          alert('添加成功')
+          // this.$router.go(0)
+          
         })
         .catch(function(error) {
           console.log(error); //失败
         });
+        this.reload()
     }
   }
 };
@@ -284,7 +309,12 @@ img {
 .h {
   display: flex;
   position: relative;
-  top: 200px;
+  top: 300px;
+  left: 100px;
+}
+.img3{
+  position: relative;
+  top: 150px;
   left: 100px;
 }
 </style>

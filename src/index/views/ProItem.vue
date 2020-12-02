@@ -2,24 +2,24 @@
   <div>
     <div class="item">
       <div class="item-1">
-         <img src="../assets/产品图.png" alt="">
+         <router-link to = "/product/gooditem/"><img src="../assets/产品图.png" alt=""></router-link>
         <div class="detail"><router-link to = "/product/gooditem/">35℃～40℃不透明中性泡化碱</router-link></div>
       </div>
       <div class="item-1">
-        <img src="../assets/产品图.png" alt="">
-        <div class="detail">35℃～40℃透明中性泡化碱</div>
+        <router-link to="/product/paohua1/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua1/">35℃～40℃透明中性泡化碱</router-link></div>
       </div>
       <div class="item-1">
-        <img src="../assets/产品图.png" alt="">
-        <div class="detail">40℃～52℃碱性泡化碱</div>
+        <router-link to="/product/paohua2/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua2/">40℃～52℃碱性泡化碱</router-link></div>
       </div>
       <div class="item-1">
-        <img src="../assets/产品图.png" alt="">
-        <div class="detail">40℃碱性泡化碱</div>
+        <router-link to="/product/paohua3/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua3/">40℃碱性泡化碱</router-link></div>
       </div>
       <div class="item-1">
-        <img src="../assets/产品图.png" alt="">
-        <div class="detail">51℃碱性泡化碱</div>
+        <router-link to="/product/paohua4/"><img src="../assets/产品图.png" alt=""></router-link>
+        <div class="detail"><router-link to="/product/paohua4/">51℃碱性泡化碱</router-link></div>
       </div>
     </div>
   </div>

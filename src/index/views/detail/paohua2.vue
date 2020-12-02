@@ -1,23 +1,8 @@
 <template>
   <div>
     <div class="nihao">
-      <img src="../assets/产品图.png" alt="">
-      <div class="desc">35℃～40℃不透明中性泡化碱</div>
-      <div class="item" id="item1">
-        <div class="name">模数：</div>
-        <div class="para">3.2M～3.5M</div>
-      </div>
-      <div class="line" id="line1"></div>
-      <div class="item" id="item2">
-        <div class="name">浓度：</div>
-        <div class="para">35℃～40℃</div>
-      </div>
-      <div class="line" id="line2"></div>
-      <div class="item" id="item3">
-        <div class="name" id="name3">加工时间：</div>
-        <div class="para" id="para3">不经过压滤</div>
-      </div>
-      <div class="line" id="line3"></div>
+      <img src="../../assets/产品图.png" alt="">
+      <div class="desc">35℃～40℃透明中性泡化碱</div>
       <div class="item" id="item4">
         <div class="name">说明：</div>
         <div class="para">特殊规格可以订制</div>

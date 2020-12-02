@@ -10,6 +10,7 @@ const addk = () => import('./views/Addk')
 const news = () => import('./views/News')
 const addnew = () => import('./views/Addnew')
 const addvideo = () => import('./views/Addvideo')
+const editlist = () =>import ('./views/EditList')
 
 export default new Router({
     mode: 'history',
@@ -45,5 +46,9 @@ export default new Router({
             path: '/addvideo',
             component: addvideo
         },
+        {
+            path:'/editlist',
+            component : editlist
+        }
     ]
 })

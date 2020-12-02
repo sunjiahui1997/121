@@ -23,22 +23,34 @@
         <div class="word"><router-link to="/news">新闻中心</router-link></div>
       </div>
     </div>
-    <router-view class="main"></router-view>
+    <router-view class="main" v-if="isRouterAlive"></router-view>
   </div>
 </template>
 
 <script>
 export default {
   name: "app",
+  provide(){
+    return{
+      reload : this.reload
+    }
+  },
   data() {
     return {
-      currentIndex: 0
+      currentIndex: 0,
+      isRouterAlive : true
     };
   },
   methods: {
     toMain() {},
     btnclick(index) {
       this.currentIndex = index;
+    },
+    reload(){
+      this.isRouterAlive = false
+      this.$nextTick(function () {
+        this.isRouterAlive = true
+      })
     }
   }
 };
@@ -67,7 +79,6 @@ body {
   width: 200px;
   height: 60px;
   cursor: pointer;
-  /* text-align: center; */
   display: flex;
   line-height: 60px;
   position: relative;
@@ -80,7 +91,6 @@ body {
   left: 40px;
 }
 .row {
-  /* position: absolute; */
   color: rgb(121, 121, 121);
   font-size: 30px;
   position: relative;

@@ -2,45 +2,45 @@
     <div>
          <div class="new1">
       <div class="new-item1">
-        <div class="img1"><img class="img1"  src="../assets/公司简介（外部）.png" alt=""></div>
-        <div class="title1">此处是新闻标题</div>
+        <div class="img1"><img class="img1"  src="../assets/4.jpg" alt=""></div>
+        <div class="title1">此处是行业动态</div>
         <div class="time">2020-11-19</div>
         <div class="line"></div>
         <div class="line2"></div>
         <div class="content">
-          此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容
+          此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态
         </div>
       </div>
       <div class="new-item2">
-        <div class="img1"><img class="img1"  src="../assets/公司简介（外部）.png" alt=""></div>
-        <div class="title1">此处是新闻标题</div>
+        <div class="img1"><img class="img1"  src="../assets/4.jpg" alt=""></div>
+        <div class="title1">此处是行业动态</div>
         <div class="time">2020-11-19</div>
         <div class="line"></div>
         <div class="line2"></div>
         <div class="content">
-          此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容
+          此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态
         </div>
       </div>
     </div>
     <div class="new1">
       <div class="new-item1">
-        <div class="img1"><img class="img1"  src="../assets/公司简介（外部）.png" alt=""></div>
-        <div class="title1">此处是新闻标题</div>
+        <div class="img1"><img class="img1"  src="../assets/3.png" alt=""></div>
+        <div class="title1">此处是行业动态</div>
         <div class="time">2020-11-19</div>
         <div class="line"></div>
         <div class="line2"></div>
         <div class="content">
-          此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容
+          此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态
         </div>
       </div>
       <div class="new-item2">
-        <div class="img1"><img class="img1"  src="../assets/公司简介（外部）.png" alt=""></div>
-        <div class="title1">此处是新闻标题</div>
+        <div class="img1"><img class="img1"  src="../assets/3.png" alt=""></div>
+        <div class="title1">此处是行业动态</div>
         <div class="time">2020-11-19</div>
         <div class="line"></div>
         <div class="line2"></div>
         <div class="content">
-          此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容此处为新闻内容
+          此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态此处为行业动态
         </div>
       </div>
     </div>

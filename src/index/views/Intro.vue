@@ -5,7 +5,8 @@
       <div class="title33">联系我们</div>
       <div class="line33"></div>
       <div class="content11">
-        联系人： 夏仁玉 <br />手 机：13805768895 <br />电 话：13805768895 <br />
+        联系人： 夏仁玉 <br />手 机：13805768895 <br />销售经理：黄广建<br />电
+        话：18268115945 <br />
         邮箱：3536127966@qq.com <br />
         名称：湖州宏盛新材料科技有限公司 <br />
       </div>
@@ -21,7 +22,9 @@
       <div class="introduce">
         我公司坐落在美丽的富春江边，离杭州35公里，离杭千高速8公里，富阳至萧山的主要公路春永线贯穿其间，水陆交通便利。我公司从1991年建厂（原江南水玻璃厂）至今已20余年。我公司主要生产硅酸钾、硅酸钠、和硅酸钾钠，俗称水玻璃（泡花碱）。主要用于焊接、制皂、洗衣粉、铸造、陶瓷、白碳黑、浇注、造纸、印染等工业领域。
       </div>
-      <div class="img7"><img src="../assets/公司简介（内部）.png" alt=""></div>
+      <div class="img7">
+        <img src="../assets/公司简介（内部）.png" alt="" />
+      </div>
     </div>
     <div class="foot">
       <div class="foot1" style="padding-top: 24px">
@@ -98,7 +101,7 @@ export default {};
   font-weight: 400;
   color: #333333;
   position: absolute;
-  top: 108px;
+  top: 95px;
   left: 30px;
   line-height: 35px;
   white-space: nowrap;
@@ -109,7 +112,7 @@ export default {};
   font-family: Source Han Sans CN;
   font-weight: 400;
   color: #333333;
-  top: 304px;
+  top: 320px;
   left: 31px;
 }
 .logo11 {
